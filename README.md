@@ -14,7 +14,7 @@ change priority of running jobs
 
 Design
 ------
-Please see the .png image
+Please see the <a href="design.jpg">design.jpg</a> image
 
 NOTE:
 Currently timer is disabled, there is a bug which i am cuurently fixing. which
