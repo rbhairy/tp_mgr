@@ -10,6 +10,8 @@
 #define cont_of(ptr, type, member) \
     (ptr ? ((type*) (((char*) ptr) - offsetof(type, member))) : NULL)
 
+#define TIMER_ENABLE 1
+
 static void
 add_task_to_runq(worker_pool_t *wpool, task_t *task)
 {

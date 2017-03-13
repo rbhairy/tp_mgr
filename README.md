@@ -83,14 +83,14 @@ TEST1 Output
 Thread Poll Manager Interactive CLI
 Usage: Please type 'help' for help or 'quit' for exit
 
-tm> STEC: poller_thread_fn is running
-STEC: worker-0 running
-STEC: worker-1 running
+tm> gc: poller_thread_fn is running
+gc: worker-0 running
+gc: worker-1 running
 
 tm>
 tm>
 tm> add job 1 2
-tm> STEC: worker-0 got task
+tm> gc: worker-0 got task
 running JOB......
 
 tm> list
@@ -102,7 +102,7 @@ id   priority   state
 1    1          RUNNING   [worker-0]
 -----------------------
 tm> add job2 2 3
-tm> STEC: worker-1 got task
+tm> gc: worker-1 got task
 running JOB......
 
 tm> add job3 3 4
@@ -137,7 +137,7 @@ id   priority   state
 5    5          IDLE
 -----------------------
 tm> lJOB Done......
-STEC: worker-0 got task
+gc: worker-0 got task
 running JOB......
 ist
 
@@ -164,7 +164,7 @@ id   priority   state
 5    5          RUNNING   [worker-0]
 -----------------------
 tm> JOB Done......
-STEC: worker-1 got task
+gc: worker-1 got task
 running JOB......
 
 tm> list
@@ -180,7 +180,7 @@ id   priority   state
 5    5          RUNNING   [worker-0]
 -----------------------
 tm> JOB Done......
-STEC: worker-0 got task
+gc: worker-0 got task
 running JOB......
 
 tm>
@@ -232,7 +232,7 @@ id   priority   state
 5    5          COMPLETED
 -----------------------
 tm> resume 3
-tm> STEC: worker-0 got task
+tm> gc: worker-0 got task
 PAUSE TO Running
 
 tm>

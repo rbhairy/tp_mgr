@@ -76,10 +76,10 @@ worker_thread_fn(void *data)
         worker_t *worker = (worker_t*)data;
         task_t *task;
 
-        fprintf(stdout, "STEC: %s running\n", worker->worker_name);
+        fprintf(stdout, "gc: %s running\n", worker->worker_name);
         while ((task = pick_task_from_runq(worker->wpool)))
         {
-                fprintf(stdout, "STEC: %s got task\n", worker->worker_name);
+                fprintf(stdout, "gc: %s got task\n", worker->worker_name);
                 task_set_cur_worker(task, worker);
                 set_task_ctx_data(task);
                 if (task->state == TASK_STATE_IDLE) {
